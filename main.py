@@ -18,7 +18,7 @@ data['NetWorth'] = data['NetWorth'].str.strip('B')
 data['NetWorth'] = data['NetWorth'].astype(float)
 
 
-# --------- FIGURE 1 --------- # er
+# --------- FIGURE 1 --------- #
 
 filteredData = data.sort_values(by = ["NetWorth"], ascending=False).head(10)
 plt.figure(figsize = (20,10))
